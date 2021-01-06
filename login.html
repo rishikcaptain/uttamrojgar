@@ -2,16 +2,17 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
     <title>UTTAM ROJGAR</title>
   </head>
   <body>
     <style media="screen">
     body{
       background-color: lightblue;
-      width: 50%;
+      width: 30%;
       margin: auto;
-      margin-top: 2%;
+      margin-top: 5%;
       border-radius: 5em;
       box-sizing: border-box;
       box-shadow: 3px 10px 20px;
@@ -19,8 +20,8 @@
     }
       form{
         padding: 5%;
-        padding-top: 5em;
-        padding-bottom: 8em;
+        padding-top: 3em;
+        padding-bottom: 6em;
         background-color: #fff;
         text-align: center;
         border-radius: 5em;
@@ -29,16 +30,18 @@
       input,button{
         font-size: x-large;
         margin: 2%;
-        margin-top: 8%;
+        margin-top: 6%;
         border: none;
         box-shadow: 1px 5px 10px #333;
         padding: 2%;
         border-radius: 20em;
         width: 90%
+
       }
       .form-check-input{
         margin: 0%;
         width: auto;
+        border-radius: 50%;
       }
     input:focus,button:focus{
       border:none;
@@ -48,12 +51,27 @@
       font-size: X-LARGE;
 
     }
-       @media only screen
+    .sgn{
+      margin-top:4%;
+    }
+    button{
+      background: #03b1fc;
+    }
+    main{
+      text-align: center;
+      width: 90%;
+      margin-left: 4%;
+    }
+    a{
+      color: green;
+      text-decoration: none;
+    }
+    @media only screen
   and (max-width: 640px)  {
       body {
-        background-color: #a0f0a0;
+        background-color: lightblue;
         width: 90%;
-        background:
+        
       }
     }
     </style>
@@ -66,7 +84,6 @@
     <input type="tel" class="form-control" placeholder="Enter Number" pattern="[0-9]{10}"required id="phone">
   </div>
   <div class="form-group">
-
     <input type="password" class="form-control" placeholder="Enter password" id="pwd">
   </div>
   <div class="form-group form-check">
@@ -74,7 +91,14 @@
       <input class="form-check-input" type="checkbox"> Remember me
     </label>
   </div>
-  <button type="submit" class="btn btn-primary">Login</button>
+  <button type="submit" class="btn">Login</button>
 </form>
+<main>
+<div class="new-member">
+  New User?
+  <a href="signup.html">SIGNUP</a>
+</div>
+
+</main>
   </body>
 </html>
